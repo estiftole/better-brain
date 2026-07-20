@@ -1,17 +1,7 @@
-For a bare-bones, multi-author publication like this, your `README.md` serves two audiences: **you** (to remember local commands and configuration) and **guest authors** (so they know how to write and submit posts without breaking your layout).
-
-Here is a ready-to-use `README.md` template tailored specifically to your 11ty + GitHub Pages setup. You can copy this directly into a `README.md` file in your root folder.
-
----
-
-### Copy-Paste `README.md` Template
-
-```markdown
-# Multi-Author Technical Publication
+# Multi-Author Technical Blog
 
 A lightweight, zero-framework static blog built with [Eleventy (11ty)](https://www.11ty.dev/), rendered with static HTML/CSS, and automatically deployed to GitHub Pages.
 
----
 
 ## 🚀 Quickstart for Local Development
 
@@ -131,5 +121,3 @@ Your post content starts here in standard Markdown...
 
 * **Manual Build:** Run `npm run build` to compile the site static files into `_site/`.
 * **Automatic Deploy:** Any merge or push to the `main` branch triggers the GitHub Actions workflow (`.github/workflows/deploy.yml`), which builds the site and deploys it to GitHub Pages.
-
-```
