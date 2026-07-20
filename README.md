@@ -1,4 +1,4 @@
-# Multi-Author Technical Blog
+# Public Technical Blog
 
 A lightweight, zero-framework static blog built with [Eleventy (11ty)](https://www.11ty.dev/), rendered with static HTML/CSS, and automatically deployed to GitHub Pages.
 
