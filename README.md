@@ -22,11 +22,9 @@ npm start
 
 Your site will be running live at `http://localhost:8080` with hot-reloading enabled.
 
----
+
 
 ## Contributing
 
 We welcome contributions! To keep this repository light, guidelines are hosted directly on our site:
 **[Read our Contributing Guide](https://www.google.com/search?q=https://better-brain.github.io/contribute)**
-
----
