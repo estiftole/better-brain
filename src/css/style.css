@@ -1,0 +1,68 @@
+:root {
+  --bg-color: #fdfdfd;
+  --text-color: #222222;
+  --accent-color: #0066cc;
+  --max-width: 720px;
+  --font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+a {
+  color: var(--accent-color);
+}
+
+/* ==========================================================================
+   Inline Code Styling
+   ========================================================================== */
+
+:not(pre) > code {
+  background-color: #f1f3f5;        /* Soft background pill */
+  color: #009e22;                   /* Distinct accent color for code */
+  padding: 0.15em 0.4em;            /* Spacing around text */
+  border-radius: 4px;              /* Rounded corners */
+  border: 1px solid #e9ecef;        /* Subtle border */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875em;               /* Slightly smaller than body text */
+}
+
+
+/* ==========================================================================
+   KaTeX Legibility & Stroke Thickness Boost
+   ========================================================================== */
+
+/* 1. Scale up the base size of math relative to normal text */
+.katex {
+  font-size: 1.15em; /* Increases font size of inline math */
+}
+
+.katex-display {
+  font-size: 1.25em; /* Makes block equations bigger and easier to read */
+}
+
+/* 2. Add slight stroke weight to thicken the thin TeX font lines */
+.katex-html {
+  -webkit-text-stroke: 0.25px; /* Adds just enough weight to thin stems without blurring */
+  text-rendering: optimizeLegibility;
+}
+
+/* 3. Ensure crisp contrast for small symbols and subscripts */
+.katex .mord,
+.katex .mbin,
+.katex .mrel,
+.katex .msupsub {
+  color: #000; /* Force deep black (or var(--text-color)) for crisp edges */
+}
