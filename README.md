@@ -11,10 +11,9 @@ A lightweight, zero-framework static blog built with [Eleventy (11ty)](https://w
 
 ### Local Setup
 1. Clone the repository:
-   ```bash
-   git clone [https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git)
-   cd YOUR-REPO-NAME
-
+```bash
+   git clone https://github.com/better-brain/better-brain.github.io.git
+   cd better-brain.github.io
 ```
 
 2. Install dependencies:
