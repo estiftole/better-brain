@@ -25,9 +25,18 @@ a {
   color: var(--accent-color);
 }
 
-/* ==========================================================================
-   Inline Code Styling
-   ========================================================================== */
+
+.site-nav {
+    margin: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: pink;*/
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
 
 :not(pre) > code {
   background-color: #d6d6d6;        /* Soft background pill */
