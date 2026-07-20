@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: First article
+title: Article
 author: Author name
 ---
 
