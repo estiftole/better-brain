@@ -2,7 +2,6 @@
 
 The public website for Better Brain.
 
----
 
 ## Quick Start
 
