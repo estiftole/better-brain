@@ -1,18 +1,37 @@
 ---
 layout: post.njk
 title: "About Better Brain"
-author: Better Brain
-description: "We need more ideas than ever."
+author: "E T"
+description: This site serves as a platform for presenting novel ideas, reviewing interesting papers, trying out experiments, and debating paths toward the most beneficial scenario for our future with AI;  exploring how to build a better brain for computers.  
 ---
 
-We live in one of the most interesting times in human history.
+> ### TL;DR
+> This site serves as a platform for presenting novel ideas, reviewing interesting papers, trying out experiments, and debating paths toward the most beneficial scenario for our future with AI;  exploring how to build a better brain for computers.    
+---
+Whether or not current technologies alone are sufficient to produce artificial general intelligence, its eventual emergence will inarguably profoundly reshape society. Thus, it is essential that it is developed with the full spectrum of life and humanity in mind, and that its power is not concentrated in the hands of a few. 
 
-The fact remains that we need more ideas than ever. If we are to realise the potential benefits of AI without compromising on safety, we need to have as many of our smartest people exploring ideas to make that happen.
+## The Holy Grail
 
-The resource-constrained hold the biggest advantage in today's age.
+Precise agriculture systems that optimize crop yields, reduce inputs, and adapt to climate variability; personalized medical systems that provide treatments with near‑perfect efficacy; autonomous rovers that construct colonies and habitable environments on distant worlds.
 
-| Tag / Type | Focus Area | Typical Length |
-| :--- | :--- | :--- |
-| **paper-review** | Breakdown of recent AI/ML papers | 1,500 - 2,500 words |
-| **opinion-piece** | Architecture & industry perspectives | 800 - 1,200 words |
-| **tutorial** | Hands-on step-by-step guides | 2,000+ words |
+These examples show-case only a fraction of the impact a general‑purpose intelligence would deliver; however, capability alone is insufficient to realize those benefits.  
+
+The ideal scenario can be realized only if, alongside human‑level fluid intelligence, the systems we build also possesses all of the following attributes:
+
+1. **Safety**: The system must be safe and reliable. It must not have any malicious or survivalist intentions that would in any way jeopardize humanity or other life.  
+
+2. **Energy-Efficiency**: The system must not consume significantly more energy than a human brain (~20 watts of power).  
+
+3. **Accessibility**: The system must remain affordable for everyone and be accessible worldwide, not restricted to a privileged few or to specific regions.
+
+Unfortunately, much contemporary research treats capability, safety, efficiency, and accessibility as separate, orthogonal problems. However, building systems that satisfy all of these requirements demands having them baked-in rather than relying on retro‑fitted training. 
+
+It is evident we are far from anything like that today. However capable and impressive today's AI may be, the fact remains that **we need more ideas than ever.**  
+
+## The Way Forward
+
+If we are to realize AI’s benefits without sacrificing safety or accessibility, the most effective path is through the exploration of unconventional avenues. 
+
+This site serves as a platform for presenting novel ideas, reviewing interesting papers, trying out experiments, and debating paths toward the most beneficial scenario for our future with AI;  exploring how to build a better brain for computers.  
+
+Contributions are welcome from anyone interested in advancing safe, accessible, and efficient artificial intelligence.

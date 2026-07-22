@@ -16,18 +16,25 @@ a {
     margin: 15px 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
+    align-items: start;
     /*background-color: pink;*/
 }
 
 .links {
     display: flex;
+    /*flex-direction: column;*/
     gap: 20px;
+    align-items: end;
 }
 
 
 .post-header {
     padding-bottom: 5px;
+}
+
+.post h1,h2,h3 {
+    font-weight: 500;
 }
 
 .instrument-serif-regular {

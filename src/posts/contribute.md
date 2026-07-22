@@ -8,13 +8,37 @@ description: We welcome contributions from guest authors!
 
 <!--# Writing for Our Publication-->
 
-We welcome contributions from guest authors! Here is how our publication workflow works:
+Writing posts is a great way to share your ideas, get feedback, and expand your horizons. It forces you to clearly present your ideas, and it's the best way to check if you truly understand a topic.
 
-### Submission Process
+We welcome posts of the following categories:
+1. **Paper Review**: A breakdown of a research paper you found interesting.
+2. **Project Analysis**: An analysis of a project or experiment you've worked on.
+3. **Opinion Piece**: An essay on your position on a certain topic. (e.g. *"What World-Models are Missing"*)
+4. **Prediction**: A piece on what you think will happen in the future. (e.g. *"The Economic Impact of AGI"*)
 
-1. **Fork the Repository:** Create a fork of the blog on GitHub.
-2. **Add Your Author Profile:** Edit `src/_data/authors.json` with your details.
-3. **Draft Your Writeup:** Create a new file in `src/posts/YYYY-MM-DD-your-topic.md`.
-4. **Submit a Pull Request:** Open a PR against `main`. Once reviewed and merged, GitHub Actions will automatically deploy it.
+> **Note:** Although you are free to write about what you want, keep in mind that your topic must be related to artificial intelligence in one way or another. 
 
-> **Note on Styling:** You can use standard Markdown features (tables, syntax-highlighted code blocks, blockquotes) in your post.
+# How to Contribute
+Once you've got your sights on a topic, here are the steps to submit a post:
+<!--### Submission Process-->
+
+### **1. Fork the Repository**  
+Create a fork of the blog on <a style="color:#3B5CFF;" href="https://github.com/better-brain/better-brain.github.io/">Github.</a>
+### **2. Draft Your Writeup**  
+Create a new file in `src/posts/YYYY-MM-DD-your-topic.md` and write your stuff.
+This is where your post will live. Using markdown makes writing posts easy. You can find a cheatsheet on markdown syntax on <a style="color:#3B5CFF;" href="https://www.markdownguide.org/basic-syntax">this page.</a>  
+
+If your post uses images, put them in `src/assets/images/post-images`.
+### **3. Add Your Author Profile** (Optional) 
+If you want your profile displayed in <a style="color:#3B5CFF;" href="/authors">/authors,</a> you can edit `src/_data/authors.json` to add your details. 
+```
+{
+  "name": "your name",
+  "bio": "Anything you'd like to share about yourself",
+  "interests": "First Interest, Second Interest, ...",
+  "github": "githubusername",
+  "x": "xusername",
+}
+```
+### **4. Submit a Pull Request**  
+After you finish writing your post, open a PR against `main`. If your pull request is accepted, your post will be displayed on <a style="color:#3B5CFF;" href="/posts">/posts.</a>

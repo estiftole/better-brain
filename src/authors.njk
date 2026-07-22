@@ -15,7 +15,7 @@ permalink: /authors/
 
             <article class="author-info">
             <h3><a>{{ author.name }}</a></h3>
-            <p class="interests">Research interests: {{ author.interests }}</p>
+            <p class="interests">Research Interests: {{ author.interests }}</p>
             <p>{{ author.bio }}</strong></p>
             <p class="socials">
                 {% if author.x %}
@@ -24,7 +24,6 @@ permalink: /authors/
                 {% if author.github %}
                 <a href="https://github.com/{{ author.github }}" class="btn">( Github )</a>
                 {% endif %}
-                <a href="" class="btn">( Posts by this person )</a>
             </p>
             </article>
         </div>

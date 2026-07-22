@@ -35,7 +35,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
+    justify-content: center;
     align-items: center;
 }
 
@@ -100,7 +100,7 @@ body {
 
 .post-card h3 {
     font-size: 22px;
-    font-weight: 600;
+    /*font-weight: 600;*/
 }
 
 .post-by {
@@ -115,9 +115,9 @@ body {
 }
 
 .post {
-    width: 60vw;
+    /*width: 60vw;*/
     /*background-color: pink;*/
-    padding: 60px;
+    padding: 60px 0px;
 }
 
 :not(pre) > code {
