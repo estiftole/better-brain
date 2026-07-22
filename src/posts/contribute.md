@@ -1,10 +1,12 @@
 ---
-layout: base.njk
+layout: post.njk
 title: Contribution Guidelines
-permalink: /contribute/
+author: Better Brain
+description: We welcome contributions from guest authors!
+# permalink: /contribute/
 ---
 
-# Writing for Our Publication
+<!--# Writing for Our Publication-->
 
 We welcome contributions from guest authors! Here is how our publication workflow works:
 
