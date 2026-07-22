@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title or "My Bare-Bones Blog" }}</title>
+  <title>{{ title or "Building a Better Brain" }}</title>
+
+  <!-- Preconnect handles faster handshake connections -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
 </head>
 <body>
   {% include "nav.njk" %}
 
-  <main class="container">
+  <main class="container inter-regular">
     {# The child layout or markdown content gets injected here #}
     {{ content | safe }}
   </main>

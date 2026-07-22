@@ -1,26 +1,28 @@
 ---
 layout: base.njk
-title: Welcome to the Publication
+# title: Building a Better Brain
 ---
 
 <section class="hero">
-  <h1>Systems & Infrastructure Engineering</h1>
-  <p>A multi-author technical publication covering databases, compilers, and web performance.</p>
-  <a href="/contribute/" class="btn">Become a Writer</a>
+    <div class="contribute-banner">
+        <a href="/contribute/" class="btn">Open for contributions</a>
+    </div>
+  <h1 class="instrument-serif-regular header zero-margin">Building a Better Brain</h1>
+  <p class="zero-margin mini-text">Technical write-ups exploring interesting ML research and ideas out of the mainstream.</p>
 </section>
 
-<section class="latest-posts">
-  <h2>Latest Writeups</h2>
-  
+<section class="posts-section">
+  <h2 class="zero-margin latest-writeups instrument-serif-regular">Latest Posts</h2>
+
   {# Loop through posts in reverse chronological order #}
   <div class="post-grid">
     {% for post in collections.posts | reverse %}
       {% if loop.index <= 3 %} {# Limit to top 3 #}
         <article class="post-card">
           <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-          <time>{{ post.date | readableDate }}</time>
-          <!--<p>Written by <strong>{{ authors[post.data.author].name }}</strong></p>-->
-          <!--<p>Written by <strong>{{ post.data.author }}</strong></p>-->
+          <p class="post-by"><a><time>{{ post.date | readableDate }}</time><a> • {{ post.data.author }}</a></a></p>
+          <p>{{ post.data.description }}</strong></p>
+          <p><a href="{{ post.url }}">Read more</a></p>
         </article>
       {% endif %}
     {% endfor %}

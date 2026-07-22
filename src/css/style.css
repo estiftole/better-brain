@@ -1,3 +1,7 @@
+/* src/css/style.css */
+@import "typography.css";
+
+
 :root {
   --bg-color: #fdfdfd;
   --text-color: #222222;
@@ -10,32 +14,97 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-family);
-  line-height: 1.6;
+  /*line-height: 1.6;*/
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  margin: 0;
 }
 
 .container {
   max-width: var(--max-width);
   margin: 2rem auto;
   padding: 0 1rem;
-}
 
-a {
-  color: var(--accent-color);
-}
-
-
-.site-nav {
-    margin: 5px 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.hero {
+    font-size: 18px;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
     /*background-color: pink;*/
 }
 
-.links {
+.header {
+    font-size: 60px;
+    /*padding-top: 10px;*/
+    /*background-color: blue;*/
+}
+.mini-text {
+    color: #313131;
+}
+
+.zero-margin {
+    margin: 0px;
+}
+
+.contribute-banner {
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #D5DCFF;
+    color: #3B5CFF;
+    padding: 4px 10px;
+    border: 1px solid #3B5CFF;
+    border-radius: 8px;
+}
+
+.latest-writeups {
+    font-size: 35px;
+    text-decoration: underline #666666 2px;
+    text-underline-offset:5px;
+}
+
+
+.post-card {
+    /*background-color: pink;*/
+    padding: 15px 0px;
+    border-bottom: 1px solid #DBDBDB; ;
+}
+
+.post-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.post-by {
+    color: #7A7A7A;
+}
+
+.posts-section {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.post {
+    width: 80%;
+    /*background-color: pink;*/
+    padding: 30px;
 }
 
 :not(pre) > code {

@@ -1,0 +1,53 @@
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+a {
+  height: auto;
+  text-decoration: none;  /* Removes the underline */
+  color: inherit;
+}
+
+.site-nav {
+    width: 80%;
+    margin: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: pink;*/
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
