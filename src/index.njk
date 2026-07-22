@@ -5,14 +5,19 @@ layout: base.njk
 
 <section class="hero">
     <div class="contribute-banner">
-        <a href="/contribute/" class="btn">Open for contributions</a>
+        <a href="/contribute/">Open for contributions</a>
     </div>
   <h1 class="instrument-serif-regular header zero-margin">Building a Better Brain</h1>
   <p class="zero-margin mini-text">Technical write-ups exploring interesting ML research and ideas out of the mainstream.</p>
+  <div class="cta-section">
+    <a href="/posts/" class="zero-margin mini-text btn">( Read posts )</a>
+    <a href="/posts/about" class="zero-margin mini-text btn">( What is this about? )</a>
+    <a href="/contribute/" class="zero-margin mini-text btn">( How to contribute )</a>
+  </div>
 </section>
 
 <section class="posts-section">
-  <h2 class="zero-margin latest-writeups instrument-serif-regular">Latest Posts</h2>
+  <h2 class="zero-margin instrument-subheading instrument-serif-regular">Latest Posts</h2>
 
   {# Loop through posts in reverse chronological order #}
   <div class="post-grid">
@@ -22,7 +27,7 @@ layout: base.njk
           <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
           <p class="post-by"><a><time>{{ post.date | readableDate }}</time><a> • {{ post.data.author }}</a></a></p>
           <p>{{ post.data.description }}</strong></p>
-          <p><a href="{{ post.url }}">Read more</a></p>
+          <p><a href="{{ post.url }}" class="btn">( Read post )</a></p>
         </article>
       {% endif %}
     {% endfor %}

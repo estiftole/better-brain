@@ -1,9 +1,11 @@
 /* src/css/style.css */
 @import "typography.css";
+@import "layout.css";
+
 
 
 :root {
-  --bg-color: #fdfdfd;
+  --bg-color: #F4F4F4;
   --text-color: #222222;
   --accent-color: #0066cc;
   --max-width: 720px;
@@ -14,13 +16,14 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-family);
+  font-size: 18px;
   /*line-height: 1.6;*/
   margin: 0;
   padding: 0;
 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers horizontally */
+  justify-content: space-between; /* Centers horizontally */
   align-items: center;     /* Centers vertically */
   margin: 0;
 }
@@ -37,15 +40,15 @@ body {
 }
 
 .hero {
-    font-size: 18px;
-    width: 70%;
+    /*font-size: 18px;*/
+    width: 80%;
     text-align: center;
     display: flex;
     flex-direction: column;
     /*justify-content: center;*/
     align-items: center;
     gap: 15px;
-    padding: 30px;
+    padding: 40px;
     /*background-color: pink;*/
 }
 
@@ -72,12 +75,22 @@ body {
     border-radius: 8px;
 }
 
-.latest-writeups {
-    font-size: 35px;
-    text-decoration: underline #666666 2px;
+.instrument-subheading {
+    font-size: 40px;
+    /*color: #7A7A7A;*/
+    text-decoration: underline #7A7A7A 1px;
     text-underline-offset:5px;
 }
 
+.cta-section {
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+}
+
+.btn:hover {
+    color: #3B5CFF;
+}
 
 .post-card {
     /*background-color: pink;*/
@@ -102,9 +115,9 @@ body {
 }
 
 .post {
-    width: 80%;
+    width: 60vw;
     /*background-color: pink;*/
-    padding: 30px;
+    padding: 60px;
 }
 
 :not(pre) > code {

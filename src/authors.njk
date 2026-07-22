@@ -1,0 +1,35 @@
+---
+layout: base.njk
+title: Our Authors
+permalink: /authors/
+---
+
+<section class="authors-section">
+    <h1 class="instrument-serif-regular instrument-subheading zero-margin">Authors</h1>
+
+    <div class="authors-grid">
+      {% for author in authors %}
+        <div class="author-card">
+
+            <!--<img src="{{ author.avatar or '/assets/images/avatars/blank.jpg' }}" alt="{{ author.name }}" class="author-avatar">-->
+
+            <article class="author-info">
+            <h3><a>{{ author.name }}</a></h3>
+            <p class="author-by">{{ author.credentials }}</p>
+            <p>{{ author.bio }}</strong></p>
+            <p class="socials">
+                {% if author.x %}
+                <a href="https://x.com/{{ author.x }}" class="btn">( X )</a>
+                {% endif %}
+                {% if author.github %}
+                <a href="https://github.com/{{ author.github }}" class="btn">( Github )</a>
+                {% endif %}
+                <a href="" class="btn">( Posts by this person )</a>
+            </p>
+            </article>
+        </div>
+      {% endfor %}
+    </div>
+
+
+</section>

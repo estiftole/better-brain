@@ -1,0 +1,17 @@
+[
+  {
+    "id": "alice",
+    "name": "Alice Smith",
+    "bio": "AI Researcher breaking down recent papers and ML architectures.",
+    "avatar": "/assets/images/avatars/blank.jpg",
+    "credentials": "ML Research, Neuroscience",
+    "x": "johndoe"
+  },
+  {
+    "id": "bob",
+    "name": "Author name",
+    "bio": "Full-stack developer with a focus on web performance and SSGs.",
+    "credentials": "ML Research, Inference",
+    "github": "johndoe"
+  }
+]

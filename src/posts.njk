@@ -1,0 +1,19 @@
+---
+layout: base.njk
+title: Posts on Better Brain
+---
+
+<section class="posts-section">
+    <h2 class="zero-margin instrument-subheading instrument-serif-regular">All Posts</h2>
+    {# Loop through posts in reverse chronological order #}
+    <div class="post-grid">
+    {% for post in collections.posts | reverse %}
+        <article class="post-card">
+        <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+        <p class="post-by"><a><time>{{ post.date | readableDate }}</time><a> • {{ post.data.author }}</a></a></p>
+        <p>{{ post.data.description }}</strong></p>
+        <p><a href="{{ post.url }}" class="btn">( Read post )</a></p>
+        </article>
+    {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,75 @@
+.authors-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    /*width: 60vw;*/
+}
+
+.authors-grid {
+    /*padding: 15px 0px;*/
+    display: flex;
+    flex-direction: column;
+    /*width: 60vw;*/
+    /*gap: 40px;*/
+    /*padding: 40px;*/
+}
+
+
+.author-card {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    /*background-color: pink;*/
+}
+
+.author-avatar {
+  width: 200px;
+  /*height: 100px;*/
+
+  /* 2. Create the circular crop */
+  border-radius: 20%;
+
+  /* 3. Maintain image aspect ratio */
+  object-fit: cover;
+}
+
+
+.author-info {
+    /*background-color: pink;*/
+    border-bottom: 1px solid #DBDBDB; ;
+    padding: 15px 0px;
+}
+
+.author-info h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.author-by {
+    color: #7A7A7A;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
