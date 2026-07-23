@@ -1,12 +1,9 @@
 ---
 layout: post.njk
-title: Contribution Guidelines
+title: "Contribution Guidelines"
 author: E Tolemariam
-description: Contributions are welcome!
-# permalink: /contribute/
+description: "Contributions are welcome!"
 ---
-
-<!--# Writing for Our Publication-->
 
 Writing posts is a great way to share your ideas, get feedback, and expand your horizons. It forces you to clearly present your ideas, and it's the best way to check if you truly understand a topic.
 
@@ -20,7 +17,6 @@ Posts of the following categories are welcome:
 
 # How to Contribute
 Once you've got your sights on a topic, here are the steps to submit a post:
-<!--### Submission Process-->
 
 ### **1. Fork the Repository**  
 Create a fork of the blog on Github.
