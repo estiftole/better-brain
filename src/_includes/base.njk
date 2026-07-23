@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script src="{{ '/js/toggle-theme.js' | url }}"></script>
 </head>
 <body>
   {% include "nav.njk" %}
@@ -21,5 +22,7 @@
     {# The child layout or markdown content gets injected here #}
     {{ content | safe }}
   </main>
+
+  <script src="{{ '/js/consistent-theme.js' | url }}"></script>
 </body>
 </html>

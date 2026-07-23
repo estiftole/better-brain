@@ -1,60 +1,50 @@
-.brand {
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-}
+/* src/css/typography.css */
 
 a {
   height: auto;
-  text-decoration: none;  /* Removes the underline */
+  text-decoration: none;
   color: inherit;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
 .site-nav {
-    font-size: 16px;
-    width: 80%;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: center;
-    /*align-items: center;*/
-    /*align-items: start;*/
-    /*background-color: pink;*/
+  font-size: 16px;
+  width: 80%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .links {
-    display: flex;
-    /*flex-direction: column;*/
-    gap: 20px;
-    align-items: end;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
 }
 
-.links {
-    display: flex;
-    gap: 20px;
-    align-items: end;
-    /*align-items: center;*/
-}
-
-/* Apply these styles only on screens 768px wide or smaller */
 @media (max-width: 768px) {
-    .links {
-        /*flex-direction: column;*/
-        gap: 5px;
-    }
+  .links {
+    gap: 5px;
+  }
 
-    .site-nav {
-        padding-top: 30px;
-        padding-bottom: 0px;
-    }
+  .site-nav {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
 }
-
 
 .post-header {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
-.post h1,h2,h3 {
-    font-weight: 500;
+.post h1,
+.post h2,
+.post h3 {
+  font-weight: 500;
 }
 
 .instrument-serif-regular {
@@ -63,19 +53,10 @@ a {
   font-style: normal;
 }
 
-
 .instrument-serif-regular-italic {
   font-family: "Instrument Serif", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-
-.inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
 }
 
 .inter-regular {

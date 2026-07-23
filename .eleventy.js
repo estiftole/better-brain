@@ -2,6 +2,10 @@ const { katex } = require("@mdit/plugin-katex");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/.nojekyll");
+  eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/assets");
+
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return new Date(dateObj).toLocaleDateString("en-US", {
       year: "numeric",
@@ -12,8 +16,6 @@ module.exports = function(eleventyConfig) {
   });
 
   // Passthrough static assets (if you have a css folder)
-  eleventyConfig.addPassthroughCopy("src/css");
-  eleventyConfig.addPassthroughCopy("src/assets");
 
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(katex));
 

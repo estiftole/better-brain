@@ -25,18 +25,14 @@
 
 .author-avatar {
   width: 200px;
-  /*height: 100px;*/
 
-  /* 2. Create the circular crop */
   border-radius: 20%;
 
-  /* 3. Maintain image aspect ratio */
   object-fit: cover;
 }
 
 
 .author-info {
-    /*background-color: pink;*/
     border-bottom: 1px solid #DBDBDB; ;
     padding: 15px 0px;
 }
