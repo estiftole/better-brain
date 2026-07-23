@@ -1,6 +1,4 @@
-# Website
-
-Technical ML blog
+# ML blog
 
 
 ## Quick Start
