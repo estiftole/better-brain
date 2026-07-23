@@ -4,7 +4,7 @@ layout: base.njk
 ---
 
 <section class="hero">
-    <a href="/posts/contribute/">
+    <a href="{{ '/posts/contribute/' | url }}">
         <div class="contribute-banner">
                 Open to contributions
         </div>
@@ -12,9 +12,9 @@ layout: base.njk
     <h1 class="instrument-serif-regular header zero-margin">Building a Better Brain</h1>
     <p class="zero-margin mini-text">Technical write-ups exploring interesting ML research and ideas out of the mainstream.</p>
     <div class="cta-section">
-        <a href="/posts/about" class="zero-margin mini-text btn">( About this site )</a>
-        <a href="/posts/" class="zero-margin mini-text btn">( Read posts )</a>
-        <a href="/posts/contribute/" class="zero-margin mini-text btn">( How to contribute )</a>
+        <a href="{{ '/posts/about/' | url }}" class="zero-margin mini-text btn">( About this site )</a>
+        <a href="{{ '/posts/' | url }}" class="zero-margin mini-text btn">( Read posts )</a>
+        <a href="{{ '/posts/contribute/' | url }}" class="zero-margin mini-text btn">( How to contribute )</a>
     </div>
 </section>
 
@@ -27,8 +27,8 @@ layout: base.njk
       {% if loop.index <= 3 %} {# Limit to top 3 #}
         <article class="post-card">
           <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-          <p class="post-by"><a><time>{{ post.date | readableDate }}</time><a> • {{ post.data.author }}</a></a></p>
-          <p>{{ post.data.description }}</strong></p>
+          <p class="post-by"><a><time>{{ post.date | readableDate }}</time></a> • <a>{{ post.data.author }}</a></p>
+          <p>{{ post.data.description }}</p>
           <p><a href="{{ post.url }}" class="btn">( Read post )</a></p>
         </article>
       {% endif %}

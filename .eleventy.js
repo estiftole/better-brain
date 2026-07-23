@@ -19,6 +19,8 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
+      // Tell Eleventy to prefix all URLs with your repo name
+      pathPrefix: "/better-brain/",
       input: "src",
       output: "_site"
     }

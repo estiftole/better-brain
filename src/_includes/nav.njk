@@ -1,10 +1,10 @@
 <nav class="site-nav">
-  <!--<a href="/" class="brand instrument-serif-regular">Better Brain</a>-->
+  <!--<a href="{{ '/' | url }}" class="brand instrument-serif-regular">Better Brain</a>-->
   <div class="links">
-    <a href="/" class="btn">( Home )</a>
-    <a href="/posts/" class="btn">( Posts )</a>
-    <!--<a href="/authors/" class="btn">( Authors )</a>-->
-    <a href="/posts/about" class="btn">( About )</a>
-    <a href="/posts/contribute/" class="btn">( Contribute )</a>
+    <a href="{{ '/' | url }}" class="btn">( Home )</a>
+    <a href="{{ '/posts/' | url }}" class="btn">( Posts )</a>
+    <!--<a href="{{ '/authors/' | url }}" class="btn">( Authors )</a>-->
+    <a href="{{ '/posts/about' | url }}" class="btn">( About )</a>
+    <a href="{{ '/posts/contribute/' | url }}" class="btn">( Contribute )</a>
   </div>
 </nav>
