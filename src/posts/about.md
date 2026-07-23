@@ -1,7 +1,7 @@
 ---
 layout: post.njk
-title: "About"
-author: ""
+title: "About Better Brain"
+author: "E Tolemariam"
 description: This site serves as a platform for presenting and testing novel ideas, reviewing interesting papers, and debating paths toward the most beneficial scenario for our future with AI;  exploring how to build a better brain for computers.    
 ---
 

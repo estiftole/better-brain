@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: Contribution Guidelines
-author: Better Brain
+author: E Tolemariam
 description: Contributions are welcome!
 # permalink: /contribute/
 ---
