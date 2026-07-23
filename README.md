@@ -1,6 +1,6 @@
 # Website
 
-The public website for Better Brain; a technical blog exploring interesting papers and ideas in ML.
+Technical ML blog.
 
 
 ## Quick Start
