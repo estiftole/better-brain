@@ -10,7 +10,7 @@ Writing posts is a great way to share your ideas, get feedback, and expand your 
 Posts of the following categories are welcome:
 1. **Paper Review**: A breakdown of a research paper you found interesting.
 2. **Project Analysis**: An analysis of a project or experiment you've worked on.
-3. **Opinion Piece**: An essay on your position on a certain topic. (e.g. *"What World-Models are Missing"*)
+3. **Opinion Piece**: An essay on your position on a certain topic. (e.g. *"What LLMs are Missing"*)
 4. **Prediction**: A piece on what you think will happen in the future. (e.g. *"The Economic Impact of AGI"*)
 
 > **Note:** Although you are free to write about what you want, keep in mind that your topic must be related to artificial intelligence in one way or another. 
