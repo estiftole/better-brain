@@ -1,6 +1,6 @@
 # Website
 
-Technical ML blog.
+Technical ML blog
 
 
 ## Quick Start
