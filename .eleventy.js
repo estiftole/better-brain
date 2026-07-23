@@ -1,7 +1,7 @@
 const { katex } = require("@mdit/plugin-katex");
 
-module.exports = function (eleventyConfig) {
-  // Register the missing 'readableDate' filter
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("src/.nojekyll");
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return new Date(dateObj).toLocaleDateString("en-US", {
       year: "numeric",
