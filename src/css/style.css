@@ -58,7 +58,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   transition: background-color 0.2s ease, color 0.2s ease;
