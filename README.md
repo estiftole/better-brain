@@ -1,6 +1,6 @@
 # Website
 
-The public website for Better Brain.
+The public website for Better Brain; a technical blog exploring interesting papers and ideas in ML.
 
 
 ## Quick Start
@@ -9,8 +9,8 @@ The public website for Better Brain.
 
 ```bash
 # Clone the repository
-git clone https://github.com/better-brain/better-brain.github.io.git
-cd better-brain.github.io
+git clone https://github.com/estiftole/better-brain.git
+cd better-brain
 
 # Install dependencies
 npm install
@@ -21,10 +21,10 @@ npm start
 ```
 
 Your site will be running live at `http://localhost:8080` with hot-reloading enabled.
-
+You can add your posts as `.md` files in `src/posts`.
 
 
 ## Contributing
 
-We welcome contributions! To keep this repository light, guidelines are hosted directly on our site:
-**[Read our Contributing Guide](https://www.google.com/search?q=https://better-brain.github.io/contribute)**
+Contributions are welcome. To keep this repository light, guidelines are hosted directly on the site:
+**[Read the Contributing Guide](https://estiftole.github.io/better-brain/posts/contribute/)**
