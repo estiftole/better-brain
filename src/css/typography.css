@@ -28,6 +28,21 @@ a {
     align-items: end;
 }
 
+.links {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    /*align-items: center;*/
+}
+
+/* Apply these styles only on screens 768px wide or smaller */
+@media (max-width: 768px) {
+    .links {
+        /*flex-direction: column;*/
+        gap: 4px;
+    }
+}
+
 
 .post-header {
     padding-bottom: 5px;

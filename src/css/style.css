@@ -88,6 +88,13 @@ body {
     padding: 10px;
 }
 
+@media (max-width: 768px) {
+    .cta-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 .btn:hover {
     color: #3B5CFF;
 }
