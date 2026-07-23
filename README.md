@@ -1,7 +1,6 @@
 # ML blog
 
-
-## Quick Start
+## Contribution Quick Start
 
 ### Setup & Development
 
