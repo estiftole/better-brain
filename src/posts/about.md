@@ -1,12 +1,12 @@
 ---
 layout: post.njk
-title: "About Better Brain"
-author: "E T"
-description: This site serves as a platform for presenting novel ideas, reviewing interesting papers, trying out experiments, and debating paths toward the most beneficial scenario for our future with AI;  exploring how to build a better brain for computers.  
+title: "About"
+author: ""
+description: This site serves as a platform for presenting and testing novel ideas, reviewing interesting papers, and debating paths toward the most beneficial scenario for our future with AI;  exploring how to build a better brain for computers.    
 ---
 
 > ### TL;DR
-> This site serves as a platform for presenting novel ideas, reviewing interesting papers, trying out experiments, and debating paths toward the most beneficial scenario for our future with AI;  exploring how to build a better brain for computers.    
+> This site serves as a platform for presenting and testing novel ideas, reviewing interesting papers, and debating paths toward the most beneficial scenario for our future with AI;  exploring how to build a better brain for computers.    
 ---
 Whether or not current technologies alone are sufficient to produce artificial general intelligence, its eventual emergence will inarguably profoundly reshape society. Thus, it is essential that it is developed with the full spectrum of life and humanity in mind, and that its power is not concentrated in the hands of a few. 
 
@@ -32,6 +32,6 @@ It is evident we are far from anything like that today. However capable and impr
 
 If we are to realize AI’s benefits without sacrificing safety or accessibility, the most effective path is through the exploration of unconventional avenues. 
 
-This site serves as a platform for presenting novel ideas, reviewing interesting papers, trying out experiments, and debating paths toward the most beneficial scenario for our future with AI;  exploring how to build a better brain for computers.  
+This site serves as a platform for presenting and testing novel ideas, reviewing interesting papers, and debating paths toward the most beneficial scenario for our future with AI;  exploring how to build a better brain for computers.
 
 Contributions are welcome from anyone interested in advancing safe, accessible, and efficient artificial intelligence.

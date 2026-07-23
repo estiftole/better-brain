@@ -15,9 +15,9 @@ a {
     width: 80%;
     margin: 15px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     /*align-items: center;*/
-    align-items: start;
+    /*align-items: start;*/
     /*background-color: pink;*/
 }
 
