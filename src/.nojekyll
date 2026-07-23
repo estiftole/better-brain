@@ -1,6 +1,1 @@
-module.exports = function(eleventyConfig) {
-  // Add this line with your other passthrough copies
-  eleventyConfig.addPassthroughCopy("src/.nojekyll");
 
-  // ... rest of your config
-};
