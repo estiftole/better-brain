@@ -1,0 +1,28 @@
+---
+layout: base.njk
+pagination:
+  data: collections
+  size: 1
+  alias: category
+  filter:
+    - all
+    - post
+    - posts
+permalink: /posts/{{ category | slugify }}/
+---
+
+<section class="posts-section">
+    <h2 class="zero-margin instrument-subheading instrument-serif-regular">Category: {{ category | capitalize }}</h2>
+    {# Loop through posts in reverse chronological order #}
+    <div class="post-grid">
+    {% set categoryList = collections[category] %}
+    {% for post in categoryList | reverse %}
+        <article class="post-card">
+            <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+            <p class="post-by"><time>{{ post.date | readableDate }}</time> • {{ post.data.author }}</p>
+            <p>{{ post.data.description }}</p>
+            <p><a href="{{ post.url | url }}" class="btn">( Read post )</a></p>
+        </article>
+    {% endfor %}
+    </div>
+</section>
