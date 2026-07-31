@@ -9,10 +9,10 @@ title: Posts on Better Brain
     <div class="post-grid">
     {% for post in collections.posts | reverse %}
         <article class="post-card">
-            <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-            <p class="post-by"><time>{{ post.date | readableDate }}</time> • {{ post.data.author }}</p>
-            <p>{{ post.data.description }}</p>
-            <p><a href="{{ post.url | url }}" class="btn">( Read post )</a></p>
+            <h3 class="zero-margin"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+            <p class="zero-margin post-by"><time>{{ post.date | readableDate }}</time> • {{ post.data.author }}</p>
+            <p class="zero-margin post-desc">{{ post.data.description }}</p>
+            <p class="zero-margin post-link"><a href="{{ post.url | url }}" class="btn">( Read post )</a></p>
         </article>
     {% endfor %}
     </div>

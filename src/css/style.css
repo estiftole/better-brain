@@ -172,17 +172,28 @@ button.btn {
 }
 
 .post-card {
-  padding: 15px 0px;
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   border-bottom: 1px solid var(--border-color);
+  /*background-color: pink;*/
 }
 
 .post-card h3 {
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .post-by {
   color: var(--muted-text);
+  padding-bottom: 15px;
 }
+
+.post-desc {
+    padding-bottom: 15px;
+}
+
 
 .post {
   padding: 60px 0px;
@@ -201,11 +212,11 @@ button.btn {
 /* KaTeX */
 
 .katex {
-  font-size: 1.15em;
+  font-size: 1.05em;
 }
 
 .katex-display {
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 
 .katex-html {
