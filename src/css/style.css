@@ -60,9 +60,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  transition: background-color 0.2s ease, color 0.2s ease;
 }
+
+body, nav {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-size: 16px;
+  width: 80%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+
 
 .container {
   max-width: var(--max-width);
