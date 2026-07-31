@@ -25,8 +25,14 @@ Once you've got your sights on a topic, here are the steps to submit a post:
 2. **Draft Your Writeup:** Create a new file in `src/posts/YYYY-MM-DD-your-topic.md` and write your stuff.
 This is where your post will live.  
 
-> Using markdown makes writing posts easy. You can find a cheatsheet on markdown syntax on <a class="btn" href="https://www.markdownguide.org/basic-syntax">( this page. )</a>  
+> Using markdown makes writing posts easy. You can find a cheatsheet on markdown syntax on <a class="reference" href="https://www.markdownguide.org/basic-syntax">this page.</a>  
+
+> The site also supports TeX to represent formulas and fancy math i.e. inline formulas like $y=wx+b$, or block formulas like:
+$$
+MSE = \frac{1}{n}\sum(y - \hat{y})^2
+$$
+> You can find a cheatsheet on TeX syntax supported by KaTeX on <a class="reference" href="https://katex.org/docs/supported.html">this page.</a>  
 
 > If your post uses images, put them in `src/assets/images/post-images`.  
 
-3. **Submit a Pull Request** After you finish writing your post, open a PR against `main`. If your pull request is accepted, your post will be displayed on <a class="btn" href="{{ '/posts/' | url }}">posts.</a>
+3. **Submit a Pull Request** After you finish writing your post, open a PR against `main`. If your pull request is accepted, your post will be displayed on <a class="reference" href="{{ '/posts/' | url }}">posts.</a>
