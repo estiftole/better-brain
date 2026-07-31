@@ -139,6 +139,14 @@ button.btn {
   padding: 0;
 }
 
+.reference {
+  text-decoration: underline var(--muted-text);
+}
+.reference:hover {
+  color: var(--accent-hover);
+  text-decoration: underline var(--accent-hover);
+}
+
 .posts-section {
   display: flex;
   flex-direction: column;
