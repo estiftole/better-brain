@@ -18,7 +18,7 @@ Posts of the following categories are welcome:
 
 > **Note:** Although you are free to write about what you want, keep in mind that your topic must be related to artificial intelligence in one way or another. 
 
-# How to Contribute
+## How to Contribute
 Once you've got your sights on a topic, here are the steps to submit a post:
 1. **Fork the Repository:** Create a fork of the blog on Github.  
 
