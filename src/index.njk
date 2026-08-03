@@ -14,14 +14,11 @@ layout: base.njk
     <div class="cta-section">
         <a href="{{ '/posts/' | url }}" class="zero-margin btn">( Read posts )</a>
         <a href="{{ '/posts/about/' | url }}" class="zero-margin btn">( About this site )</a>
-        <!--<a href="{{ '/posts/contribute/' | url }}" class="zero-margin btn">( How to contribute )</a>-->
     </div>
 </section>
 
 <section class="posts-section">
   <h2 class="zero-margin instrument-subheading instrument-serif-regular">Latest Posts</h2>
-
-  {# Loop through posts in reverse chronological order #}
   <div class="post-grid">
       {% for post in (collections.posts | reverse).slice(0, 3) %}
         <article class="post-card">

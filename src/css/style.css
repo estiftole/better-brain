@@ -1,4 +1,4 @@
-/* src/css/style.css */
+
 
 @import "typography.css";
 @import "layout.css";
@@ -203,41 +203,41 @@ button.btn {
   font-size: 0.875em;
 }
 
-/* 1. Target the container box for block code */
+
 pre {
   background-color: var(--code-bg);
   padding: 1em;
   border-radius: 6px;
   border: 1px solid var(--code-bg);
-  overflow-x: auto; /* Adds a horizontal scrollbar if the code is too wide */
+  overflow-x: auto;
 }
 
-/* 2. Target the actual text inside the block code */
+
 pre code {
   color: var(--code-text);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.875em;
 
-  /* Reset these so they don't double-up with the <pre> styling */
+
   background-color: transparent;
   padding: 0;
   border: none;
 }
 
-/* KaTeX */
+
 .katex {
   font-size: 1em;
-  line-height: 0; /* Stops inline math from expanding the paragraph's line box */
+  line-height: 0;
 }
 
 .katex-display {
   font-size: 1em;
-  line-height: normal; /* Restores normal line height for display (block) math */
+  line-height: normal;
 }
 
 .katex-html {
   -webkit-text-stroke: 0.25px;
-  /* Removed optimizeLegibility to prevent WebKit line-box expansion */
+
 }
 
 .katex .mord,
@@ -247,18 +247,15 @@ pre code {
   color: var(--text-color);
 }
 
-/* Target only inline KaTeX math inside paragraphs and lists */
+
 p .katex,
 li .katex {
-  /* Shrinks the top and bottom bounding box of the math element */
   margin-top: -0.5em;
   margin-bottom: -0.5em;
 
-  /* Ensures KaTeX can still calculate its baseline vertical-align */
   display: inline-block;
 }
 
-/* Ensure display (block) math remains unaffected if your markdown parser wraps them in <p> tags */
 p .katex-display .katex {
   margin-top: 0;
   margin-bottom: 0;
