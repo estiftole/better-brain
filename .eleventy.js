@@ -11,11 +11,9 @@ module.exports = function(eleventyConfig) {
       year: "numeric",
       month: "long",
       day: "numeric",
-      timeZone: "UTC" // Helps prevent timezone offset shifts on dates like 2026-07-21
+      timeZone: "UTC"
     });
   });
-
-  // Passthrough static assets (if you have a css folder)
 
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(katex));
 
