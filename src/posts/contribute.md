@@ -23,9 +23,17 @@ Posts of the following categories are welcome:
 Once you've got your sights on a topic, here are the steps to submit a post:
 1. **Fork the Repository:** Create a fork of the blog on Github.  
 
-2. **Draft Your Writeup:** Create a new file in `src/posts/YYYY-MM-DD-your-topic.md` and write your stuff.
-This is where your post will live.  
-
+2. **Draft Your Writeup:** Create a new file in `src/posts/your-topic.md` and write your stuff.
+This is where your post will live. Make sure to include the following information at the top of the file:
+```
+---
+layout: post.njk
+title: "The title of your post"
+date: YYYY-MM-DD
+author: Your Name
+description: "A brief description of your post."
+---
+```
 > Using markdown makes writing posts easy. You can find a cheatsheet on markdown syntax on <a class="reference" href="https://www.markdownguide.org/basic-syntax">this page.</a>  
 
 > The site also supports TeX to represent formulas and fancy math i.e. inline formulas like $y=wx+b$, or block formulas like:
