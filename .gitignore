@@ -1,3 +1,6 @@
 node_modules/
 _site/
 .DS_Store
+
+src/posts/archive/
+src/assets/images/post-images/archive/

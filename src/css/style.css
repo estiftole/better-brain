@@ -19,7 +19,7 @@
   --banner-text: #3B5CFF;
   --banner-border: #3B5CFF;
 
-  --code-bg: #EDEDED;
+  --code-bg: #dcdcde;
   --code-text: #2E2E2E;
   --code-border: #EDEDED;
 
@@ -42,7 +42,7 @@
   --banner-text: #88A0FF;
   --banner-border: #6688FF;
 
-  --code-bg: #191919;
+  --code-bg: #292929;
   --code-text: #E4E4E4;
   --code-border: #202020;
 }
@@ -157,7 +157,7 @@ button.btn {
 }
 
 .reference {
-  text-decoration: underline var(--muted-text);
+  text-decoration: underline var(--muted-text) 2px;
 }
 .reference:hover {
   color: var(--accent-hover);
@@ -204,18 +204,19 @@ button.btn {
 }
 
 /* KaTeX */
-
 .katex {
-  font-size: 1.05em;
+  font-size: 1em;
+  line-height: 0; /* Stops inline math from expanding the paragraph's line box */
 }
 
 .katex-display {
-  font-size: 1.1em;
+  font-size: 1em;
+  line-height: normal; /* Restores normal line height for display (block) math */
 }
 
 .katex-html {
   -webkit-text-stroke: 0.25px;
-  text-rendering: optimizeLegibility;
+  /* Removed optimizeLegibility to prevent WebKit line-box expansion */
 }
 
 .katex .mord,
@@ -223,4 +224,26 @@ button.btn {
 .katex .mrel,
 .katex .msupsub {
   color: var(--text-color);
+}
+
+/* Target only inline KaTeX math inside paragraphs and lists */
+p .katex,
+li .katex {
+  /* Shrinks the top and bottom bounding box of the math element */
+  margin-top: -0.5em;
+  margin-bottom: -0.5em;
+
+  /* Ensures KaTeX can still calculate its baseline vertical-align */
+  display: inline-block;
+}
+
+/* Ensure display (block) math remains unaffected if your markdown parser wraps them in <p> tags */
+p .katex-display .katex {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "Contribution Guidelines"
+date: 2026-07-26
 author: E Tolemariam
 description: "Contributions are welcome!"
 ---
