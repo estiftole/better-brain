@@ -161,7 +161,7 @@ button.btn {
 }
 .reference:hover {
   color: var(--accent-hover);
-  text-decoration: underline var(--accent-hover);
+  text-decoration: underline var(--accent-hover) 2px;
 }
 
 .posts-section {
