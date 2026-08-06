@@ -1,8 +1,8 @@
 # ML blog
 
-## Contribution Quick Start
+<!--## Contribution Quick Start-->
 
-### Setup & Development
+## Setup & Development
 
 ```bash
 # Clone the repository
@@ -17,11 +17,11 @@ npm start
 
 ```
 
-Your site will be running live at `http://localhost:8080` with hot-reloading enabled.
-You can add your posts as `.md` files in `src/posts`.
+The site will be running live at `http://localhost:8080` with hot-reloading enabled.
+Add posts as `.md` files in `src/posts`.
 
-
+<!--
 ## Contributing
 
 Contributions are welcome. To keep this repository light, guidelines are hosted directly on the site:
-**[Read the Contributing Guide](https://estiftole.github.io/paper-review/posts/contribute/)**
+**[Read the Contributing Guide](https://estiftole.github.io/paper-review/posts/contribute/)**-->
