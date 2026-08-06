@@ -17,7 +17,7 @@ npm start
 
 ```
 
-The site will be running live at `http://localhost:8080` with hot-reloading enabled.
+Site will be running live at `http://localhost:8080` with hot-reloading enabled.
 Add posts as `.md` files in `src/posts`.
 
 
