@@ -6,8 +6,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/estiftole/better-brain.git
-cd better-brain
+git clone https://github.com/estiftole/paper-review.git
+cd paper-review
 
 # Install dependencies
 npm install
@@ -24,4 +24,4 @@ You can add your posts as `.md` files in `src/posts`.
 ## Contributing
 
 Contributions are welcome. To keep this repository light, guidelines are hosted directly on the site:
-**[Read the Contributing Guide](https://estiftole.github.io/better-brain/posts/contribute/)**
+**[Read the Contributing Guide](https://estiftole.github.io/paper-review/posts/contribute/)**
