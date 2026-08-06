@@ -3,16 +3,24 @@ layout: base.njk
 title: Posts on Better Brain
 ---
 
-<section class="posts-section">
-    <h2 class="zero-margin instrument-subheading instrument-serif-regular">All Posts</h2>
-    <div class="post-grid">
-    {% for post in collections.posts | reverse %}
+<section class="posts-section top-head">
+    <h1 class="zero-margin subheader-big">ALL POSTS</h1>
+  <div class="post-grid">
+      {% for post in (collections.posts | reverse).slice(0, 3) %}
         <article class="post-card">
             <h3 class="zero-margin"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-            <p class="zero-margin post-by"><time>{{ post.date | readableDate }}</time> • {{ post.data.author }}</p>
-            <p class="zero-margin post-desc">{{ post.data.description }}</p>
-            <p class="zero-margin post-link"><a href="{{ post.url | url }}" class="btn">( Read post )</a></p>
+
+            <p class="zero-margin post-by">
+                <time>{{ post.date | numericDate }}</time>
+                <a>{{ post.data.author }}</a>
+            </p>
+
+
+            <div class="post-info">
+                <p class="zero-margin post-desc">{{ post.data.description }}</p>
+                <p class="zero-margin post-link"><a href="{{ post.url | url }}" class="btn">/ READ POST </a></p>
+            </div>
         </article>
-    {% endfor %}
-    </div>
+      {% endfor %}
+  </div>
 </section>

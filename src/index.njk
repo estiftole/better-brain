@@ -2,30 +2,34 @@
 layout: base.njk
 # title: Building a Better Brain
 ---
+<section class="hero top-head">
 
-<section class="hero">
-    <a href="{{ '/posts/contribute/' | url }}">
-        <div class="contribute-banner">
-                Open to contributions
-        </div>
-    </a>
-    <h1 class="instrument-serif-regular header zero-margin">Building a Better Brain</h1>
-    <p class="zero-margin mini-text">Technical write-ups exploring ML research and ideas out of the mainstream.</p>
+    <h1 class="header zero-margin">
+        Write-ups on machine learning papers and ideas outside the mainstream
+    </h1>
     <div class="cta-section">
-        <a href="{{ '/posts/' | url }}" class="zero-margin btn">( Read posts )</a>
-        <a href="{{ '/posts/about/' | url }}" class="zero-margin btn">( About this site )</a>
+        <a href="{{ '/posts/' | url }}" class="zero-margin btn">/ ALL POSTS </a>
+        <a href="{{ '/posts/about/' | url }}" class="zero-margin btn">/ ABOUT THIS SITE </a>
     </div>
 </section>
 
 <section class="posts-section">
-  <h2 class="zero-margin instrument-subheading instrument-serif-regular">Latest Posts</h2>
+    <p class="zero-margin subheader">LATEST POSTS</p>
   <div class="post-grid">
       {% for post in (collections.posts | reverse).slice(0, 3) %}
         <article class="post-card">
-          <h3 class="zero-margin"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-          <p class="zero-margin post-by"><time>{{ post.date | readableDate }}</time> • {{ post.data.author }}</p>
-          <p class="zero-margin post-desc">{{ post.data.description }}</p>
-          <p class="zero-margin post-link"><a href="{{ post.url | url }}" class="btn">( Read post )</a></p>
+            <h3 class="zero-margin"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+
+            <p class="zero-margin post-by">
+                <time>{{ post.date | numericDate }}</time>
+                <a>{{ post.data.author }}</a>
+            </p>
+
+
+            <div class="post-info">
+                <p class="zero-margin post-desc">{{ post.data.description }}</p>
+                <p class="zero-margin post-link"><a href="{{ post.url | url }}" class="btn">/ READ POST </a></p>
+            </div>
         </article>
       {% endfor %}
   </div>

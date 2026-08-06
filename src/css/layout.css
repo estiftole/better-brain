@@ -1,58 +1,3 @@
-.authors-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0px;
-    /*width: 60vw;*/
-}
-
-.authors-grid {
-    /*padding: 15px 0px;*/
-    display: flex;
-    flex-direction: column;
-    /*width: 60vw;*/
-    /*gap: 40px;*/
-    /*padding: 40px;*/
-}
-
-
-.author-card {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    /*background-color: pink;*/
-}
-
-.author-avatar {
-  width: 200px;
-
-  border-radius: 20%;
-
-  object-fit: cover;
-}
-
-
-.author-info {
-    border-bottom: 1px solid #DBDBDB; ;
-    padding: 15px 0px;
-}
-
-.author-info h3 {
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.interests {
-    color: #7A7A7A;
-}
-
-.socials {
-    display: flex;
-    gap: 20px;
-}
-
-
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -67,5 +12,176 @@ th, td {
 
 th {
   background-color: #f8f9fa;
-  font-weight: 600;
+  /*font-weight: 600;*/
+}
+
+.mainpost-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20vh;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    /*font-weight: 400;*/
+}
+
+.mainpost-header > h1 {
+    font-weight: 400;
+}
+
+.post-author {
+    display: flex;
+    gap: 60px;
+}
+
+/*DOOKIE*/
+
+/* Layout container */
+
+
+/* Sticky TOC Sidebar */
+.toc-sidebar {
+  position: sticky;
+  top: 40px; /* Offset from top of viewport when scrolling */
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.toc h4 {
+  margin-top: 0;
+  text-transform: uppercase;
+  /*font-size: 0.85rem;*/
+  /*color: #888;*/
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc li {
+  margin-bottom: 8px;
+}
+
+.toc a {
+  text-decoration: none;
+  /*color: #444;*/
+  /*font-size: 0.9rem;*/
+  /*transition: color 0.2s ease;*/
+}
+
+.toc a:hover {
+  /*color: var(--accent-hover);*/
+  color: white;
+  background-color: blue;
+}
+
+/* Enable smooth scrolling across the page */
+/* Enable native smooth scrolling down to the anchor */
+html {
+  scroll-behavior: smooth;
+}
+
+/* The 2-column grid */
+.post-layout {
+  display: grid;
+  /* Sidebar is 250px wide, content takes the rest */
+  grid-template-columns: 300px 1fr;
+  gap: 70px;
+  /*margin-top: 50px;*/
+
+  /* CRITICAL: align-items start prevents the sidebar from stretching vertically,
+     which allows position: sticky to work properly */
+  align-items: start;
+}
+
+.post-sidebar {
+  /* Sticks to the screen 30px from the top */
+  position: sticky;
+  top: 30px;
+  text-transform: uppercase;
+  font-weight: 300;
+  /*width: 25vw;*/
+}
+
+/* Styling the menu itself */
+.toc {
+  counter-reset: toc-count;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%; /* Spans full width of sidebar to create the gap */
+}
+
+.toc-link {
+  display: flex;
+  justify-content: space-between; /* Number left, title right */
+  /*align-items: baseline;*/
+  align-items: flex-start; /* Pins (07 /) to the top line of multi-line titles */
+  text-align: right;               /* Right-aligns multi-line titles */
+  text-transform: uppercase;        /* Matches the ALL CAPS styling */
+  /*color: #333;*/
+  text-decoration: none;
+}
+
+/* Format the numbers on the left as (01), (02), etc. */
+.toc-link::before {
+  counter-increment: toc-count;
+  content: counter(toc-count, decimal-leading-zero) " /";
+  /*color: #666;*/
+  white-space: nowrap;
+
+  /*padding-right: 20px; /* Minimum space between number and title */*/
+}
+
+/* Mobile: Stack the layout when the screen is small */
+@media (max-width: 846px) {
+  .post-layout {
+    grid-template-columns: 1fr; /* Switch to single column */
+    margin-top: 30px;
+  }
+
+  .post-sidebar {
+      display: none;
+  }
+}
+
+.post-body {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* 1. Give the Sticky TOC room below the top nav bar */
+.post-sidebar {
+  position: sticky;
+  /* Navbar height (e.g. 70px) + 30px breathing room = 100px */
+  top: 100px;
+  align-self: start;
+  max-height: calc(100vh - 120px); /* Adjust max-height accordingly */
+  overflow-y: auto;
+}
+
+/* 2. Stop clicked headings below the top nav bar */
+.post-body h2 {
+  /* Navbar height (e.g. 70px) + 20px breathing room = 90px */
+  scroll-margin-top: 90px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.post-body h3,h4, h5 {
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.post-body > :first-child {
+  margin-top: 0;
+}
+
+blockquote > :first-child {
+  margin-top: 0;
 }

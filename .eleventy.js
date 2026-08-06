@@ -1,4 +1,5 @@
 const { katex } = require("@mdit/plugin-katex");
+const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/.nojekyll");
@@ -15,10 +16,14 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("numericDate", (dateObj) => {
+      return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("MM.dd.yy");
+    });
+
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(katex));
 
   return {
-    pathPrefix: "/better-brain/",
+    pathPrefix: "/paper-review/",
     dir: {
       // Tell Eleventy to prefix all URLs with your repo name
       input: "src",
