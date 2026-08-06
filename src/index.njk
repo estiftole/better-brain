@@ -4,17 +4,17 @@ title: "Paper Review"
 ---
 <section class="hero top-head">
 
-    <h1 class="header zero-margin">
+    <h1 class="header zero-margin inter">
         Write-ups on machine learning papers and ideas outside the mainstream
     </h1>
-    <div class="cta-section">
+    <div class="cta-section open-sans">
         <a href="{{ '/posts/' | url }}" class="zero-margin btn">/ ALL POSTS </a>
         <a href="{{ '/posts/about/' | url }}" class="zero-margin btn">/ ABOUT THIS SITE </a>
     </div>
 </section>
 
-<section class="posts-section">
-    <p class="zero-margin subheader">LATEST POSTS</p>
+<section class="posts-section open-sans">
+    <p class="zero-margin subheader inter">LATEST POSTS</p>
   <div class="post-grid">
       {% for post in (collections.posts | reverse).slice(0, 3) %}
         <article class="post-card">

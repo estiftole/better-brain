@@ -4,8 +4,8 @@ title: "All Posts"
 ---
 
 <section class="posts-section top-head">
-    <h1 class="zero-margin subheader-big">ALL POSTS</h1>
-  <div class="post-grid">
+    <h1 class="zero-margin subheader-big inter">ALL POSTS</h1>
+  <div class="post-grid open-sans">
       {% for post in (collections.posts | reverse).slice(0, 3) %}
         <article class="post-card">
             <h3 class="zero-margin"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>

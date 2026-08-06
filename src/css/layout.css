@@ -101,7 +101,7 @@ html {
   position: sticky;
   top: 30px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   /*width: 25vw;*/
 }
 
@@ -149,7 +149,7 @@ html {
 
 .post-body {
     font-size: 20px;
-    font-weight: 400;
+    /*font-weight: 400;*/
 }
 
 /* 1. Give the Sticky TOC room below the top nav bar */

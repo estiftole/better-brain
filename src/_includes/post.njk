@@ -3,15 +3,15 @@ layout: base.njk
 ---
 <article class="post">
     <header class="mainpost-header top-head">
-        <h1 class="zero-margin">{{ title }}</h1>
-        <div class="post-author">
+        <h1 class="zero-margin inter">{{ title }}</h1>
+        <div class="post-author open-sans">
             <time>{{ date | numericDate }}</time>
             <a>{{ author }}</a>
         </div>
     </header>
 
     <!-- New two-column layout wrapper -->
-    <div class="post-layout" zero-margin>
+    <div class="post-layout open-sans" zero-margin>
 
         <!-- Sidebar Menu -->
         <aside class="post-sidebar">
@@ -19,7 +19,7 @@ layout: base.njk
         </aside>
 
         <!-- Post Content -->
-        <div class="post-body">
+        <div class="post-body open-sans">
             {{ content | safe }}
         </div>
 
