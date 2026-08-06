@@ -1,14 +1,18 @@
 ---
 layout: base.njk
 ---
+<div class="hero-container">
+
+<header class="mainpost-header top-head">
+    <h1 class="zero-margin inter">{{ title }}</h1>
+    <div class="post-author open-sans">
+        <time>{{ date | numericDate }}</time>
+        <a>{{ author }}</a>
+    </div>
+</header>
+</div>
 <article class="post">
-    <header class="mainpost-header top-head">
-        <h1 class="zero-margin inter">{{ title }}</h1>
-        <div class="post-author open-sans">
-            <time>{{ date | numericDate }}</time>
-            <a>{{ author }}</a>
-        </div>
-    </header>
+
 
     <!-- New two-column layout wrapper -->
     <div class="post-layout open-sans" zero-margin>

@@ -18,10 +18,11 @@ th {
 .mainpost-header {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
     padding-top: 20vh;
     padding-bottom: 40px;
     text-transform: uppercase;
+    width: 85%;
     /*font-weight: 400;*/
 }
 
@@ -99,7 +100,7 @@ html {
 .post-sidebar {
   /* Sticks to the screen 30px from the top */
   position: sticky;
-  top: 30px;
+  top: 40px;
   text-transform: uppercase;
   font-weight: 400;
   /*width: 25vw;*/
@@ -148,7 +149,7 @@ html {
 }
 
 .post-body {
-    font-size: 20px;
+    font-size: 18px;
     /*font-weight: 400;*/
 }
 
@@ -156,7 +157,7 @@ html {
 .post-sidebar {
   position: sticky;
   /* Navbar height (e.g. 70px) + 30px breathing room = 100px */
-  top: 100px;
+  top: 90px;
   align-self: start;
   max-height: calc(100vh - 120px); /* Adjust max-height accordingly */
   overflow-y: auto;
