@@ -234,7 +234,7 @@ body, nav, post-sidebar {
   gap: 40px; /* Equal spacing between column boundaries */
   align-items: start;
   padding: 30px 0;
-  border-bottom: 1px solid var(--border-color);
+  /*border-bottom: 1px solid var(--border-color);*/
 }
 
 
