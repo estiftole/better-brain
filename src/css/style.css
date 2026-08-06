@@ -127,7 +127,7 @@ body, nav, post-sidebar {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding-bottom: 5vh;
+  padding-bottom: 10vh;
   /*background-color: pink;*/
 }
 
@@ -418,12 +418,12 @@ img {
 }
 
 .top-head {
-    padding-top: 20vh;
+    padding-top: 25vh;
 }
 
 h1 {
     /*font-size: 25px;*/
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .subheader-big {
