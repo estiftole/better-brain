@@ -121,7 +121,7 @@ body, nav, post-sidebar {
 .header {
     text-align: left;
     text-transform: uppercase;
-  font-size: 30px;
+  /*font-size: 30px;*/
   font-weight: 400;
   /*background-color: blue;*/
   width: 70%;
@@ -407,6 +407,11 @@ img {
 
 .top-head {
     padding-top: 20vh;
+}
+
+h1 {
+    /*font-size: 25px;*/
+    font-size: 30px;
 }
 
 .subheader-big {
