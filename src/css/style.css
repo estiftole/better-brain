@@ -15,10 +15,6 @@
   --accent-hover: #2643D6;
 
 
-  --banner-bg: #D5DCFF;
-  --banner-text: #3B5CFF;
-  --banner-border: #3B5CFF;
-
   --code-bg: #dcdcde;
   --code-text: #2E2E2E;
   --code-border: #EDEDED;
@@ -39,10 +35,6 @@
 
   --accent-color: #6688FF;
   --accent-hover: #88A0FF;
-
-  --banner-bg: #1E2855;
-  --banner-text: #88A0FF;
-  --banner-border: #6688FF;
 
   --code-bg: #292929;
   --code-text: #E4E4E4;
@@ -445,8 +437,8 @@ h1 {
 
     .links {
       display: flex;
-      width: 100%;
-      justify-content: center;
+      width: 85%;
+      justify-content: end;
       /*align-items: end;*/
       /*justify-content: space-between;*/
         /*background-color: pink;*/
