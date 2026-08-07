@@ -71,7 +71,7 @@ body {
   color: var(--text-color);
   /*font-family: var(--font-family);*/
   font-size: 15px;
-  font-weight: 400;
+  /*font-weight: 500;*/
   margin: 0;
   padding: 0;
 
@@ -92,10 +92,12 @@ body, nav, post-sidebar {
   top: 0;
   z-index: 1000;
   font-size: 15px;
+  font-weight: 500;
   width: 100%;
-  padding: 10px 10px;
+  padding: 5px 5px;
   display: flex;
   justify-content: center;
+  /*align-items: center;*/
   background-color: var(--bg-color);
   border-bottom: 1px solid var(--border-color);
   /*background-color: white;*/
@@ -105,9 +107,9 @@ body, nav, post-sidebar {
 .links {
   display: flex;
   width: 85%;
+  align-items: end;
   justify-content: space-between;
-  align-items: center;
-    /*background-color: blue;*/
+    /*background-color: pink;*/
 }
 
 .container {
@@ -136,7 +138,7 @@ body, nav, post-sidebar {
   justify-content: space-between;
   gap: 30px;
   padding-bottom: 40px;
-  font-weight: 400;
+  font-weight: 500;
   /*background-color: pink;*/
 }
 
@@ -195,15 +197,16 @@ body, nav, post-sidebar {
 
 .btn {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
   background: none;
   border: none;
   font: inherit;
   color: inherit;
   cursor: pointer;
   width: fit-content;
-  padding: 0 20px;
+  padding: 0 5px;
 }
+
 .btn:hover {
   /*color: var(--accent-hover);*/
   white-space: nowrap;
@@ -298,48 +301,14 @@ body, nav, post-sidebar {
     /*width: 85%;*/
 }
 
+.post-link {
+    font-weight: 500;
+}
+
 .post {
   width: 85%;
   padding: 40px 0px;
 }
-
-
-@media (max-width: 846px) {
-
-    .header {
-        width: 85%;
-    }
-    .cta-section {
-        flex-direction: row;
-        gap: 30px;
-    }
-
-    .hero {
-        flex-direction: column;
-    }
-
-    .post-card {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        }
-
-    .post-card > h3 {
-        width: 100%;
-    }
-
-    .post-by {
-        flex-direction: row;
-        gap: 20px;
-    }
-
-
-    .post-grid {
-        gap: 50px;
-    }
-}
-
-
 
 :not(pre) > code {
   background-color: var(--code-bg);
@@ -428,4 +397,56 @@ h1 {
     width: 85%
     /*padding-bottom: 20px;*/
     /*background-color: blue;*/
+}
+
+@media (max-width: 846px) {
+
+    .header {
+        width: 100%;
+    }
+    .cta-section {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .post-card {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        }
+
+    .post-card > h3 {
+        width: 100%;
+    }
+
+    .post-by {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+
+    .post-grid {
+        gap: 50px;
+    }
+
+    .top-head {
+        padding-top: 20vh;
+    }
+
+    .site-nav {
+        width: 100%;
+    }
+
+    .links {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      /*align-items: end;*/
+      /*justify-content: space-between;*/
+        /*background-color: pink;*/
+    }
 }
