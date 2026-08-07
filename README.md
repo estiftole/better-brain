@@ -1,7 +1,5 @@
 # ML blog
 
-<!--## Contribution Quick Start-->
-
 ## Setup & Development
 
 ```bash
