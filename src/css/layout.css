@@ -128,6 +128,7 @@ html {
   text-transform: uppercase;        /* Matches the ALL CAPS styling */
   /*color: #333;*/
   text-decoration: none;
+  padding-right: 20px;
 }
 
 /* Format the numbers on the left as (01), (02), etc. */
