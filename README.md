@@ -23,5 +23,5 @@ Add posts as `.md` files in `src/posts`.
 
 ## Contributing
 
-Contributions are welcome. To keep this repository light, guidelines are hosted directly on the site:
+To keep this repository light, guidelines are hosted directly on the site:
 **[Read the Contributing Guide](https://estiftole.github.io/paper-review/posts/contribute/)**
