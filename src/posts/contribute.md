@@ -5,6 +5,7 @@ date: 2026-07-26
 author: E Tolemariam
 description: "How to add new posts."
 ---
+
 ## Why Contribute
 Writing posts is a great way to share your ideas, get feedback, and expand your horizons. It forces you to clearly present your ideas, and it's the best way to check if you truly understand a topic.
 

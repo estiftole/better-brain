@@ -87,13 +87,11 @@ html {
 /* The 2-column grid */
 .post-layout {
   display: grid;
-  /* Sidebar is 250px wide, content takes the rest */
   grid-template-columns: 300px 1fr;
   gap: 70px;
   /*margin-top: 50px;*/
+  width: 85%;
 
-  /* CRITICAL: align-items start prevents the sidebar from stretching vertically,
-     which allows position: sticky to work properly */
   align-items: start;
 }
 
@@ -137,20 +135,11 @@ html {
 }
 
 /* Mobile: Stack the layout when the screen is small */
-@media (max-width: 846px) {
-  .post-layout {
-    grid-template-columns: 1fr; /* Switch to single column */
-    margin-top: 30px;
-  }
 
-  .post-sidebar {
-      display: none;
-  }
-}
 
 .post-body {
     font-size: 18px;
-    /*font-weight: 400;*/
+    min-width: 0;
 }
 
 /* 1. Give the Sticky TOC room below the top nav bar */
@@ -185,4 +174,15 @@ strong {
 
 blockquote > :first-child {
   margin-top: 0;
+}
+
+@media (max-width: 846px) {
+  .post-layout {
+    grid-template-columns: 1fr; /* Switch to single column */
+    margin-top: 30px;
+  }
+
+  .post-sidebar {
+      display: none;
+  }
 }
