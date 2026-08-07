@@ -92,7 +92,7 @@ body, nav, post-sidebar {
   justify-content: center;
   /*align-items: center;*/
   background-color: var(--bg-color);
-  border-bottom: var(--border-width) solid var(--border-color);
+  /*border-bottom: var(--border-width) solid var(--border-color);*/
   /*background-color: white;*/
 
 }
