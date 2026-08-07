@@ -197,7 +197,7 @@ body, nav, post-sidebar {
   color: inherit;
   cursor: pointer;
   width: fit-content;
-  padding: 0 5px;
+  padding-right: 20px;
 }
 
 .btn:hover {
@@ -222,6 +222,8 @@ body, nav, post-sidebar {
   gap: 30px;
   width: 85%;
 }
+
+
 
 .post-grid {
     display: flex;
@@ -291,7 +293,6 @@ body, nav, post-sidebar {
 .post-desc {
     font-size: 18px;
     font-weight: 400;
-    /*width: 85%;*/
 }
 
 .post-link {
@@ -394,6 +395,8 @@ h1 {
     /*background-color: blue;*/
 }
 
+
+
 @media (max-width: 846px) {
 
     .header {
@@ -438,10 +441,13 @@ h1 {
 
     .links {
       display: flex;
-      width: 85%;
       justify-content: end;
       /*align-items: end;*/
       /*justify-content: space-between;*/
         /*background-color: pink;*/
+    }
+
+    .posts-section, .subheader-big, .links, .hero, .subheader {
+        width: 90%;
     }
 }
