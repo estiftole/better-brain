@@ -219,6 +219,7 @@ body, nav, post-sidebar {
   flex-direction: column;
   align-items: start;
   padding: 20px 0px;
+  padding-bottom: 100px;
   gap: 30px;
   width: 85%;
 }
@@ -346,6 +347,10 @@ pre code {
 .katex-display {
   font-size: 1em;
   line-height: normal;
+  overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    padding: 8px 0;
 }
 
 .katex-html {
@@ -450,4 +455,11 @@ h1 {
     .posts-section, .subheader-big, .links, .hero, .subheader {
         width: 90%;
     }
+}
+
+
+.katex-display,
+.post-body {
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent; /* [thumb] [track] */
+  scrollbar-width: thin;
 }

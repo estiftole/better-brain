@@ -3,4 +3,5 @@ _site/
 .DS_Store
 
 src/posts/archive/
+src/posts/table.md
 src/assets/images/post-images/archive/
