@@ -24,6 +24,7 @@
   --font-family: system-ui, -apple-system, sans-serif;
   /*--font-family: "Elms Sans";*/
   /*--font-family: "Barlow", sans-serif;*/
+  --border-width: 2px;
 }
 
 
@@ -91,7 +92,7 @@ body, nav, post-sidebar {
   justify-content: center;
   /*align-items: center;*/
   background-color: var(--bg-color);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: var(--border-width) solid var(--border-color);
   /*background-color: white;*/
 
 }
@@ -118,7 +119,7 @@ body, nav, post-sidebar {
 .hero-container {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: var(--border-width) solid var(--border-color);
     /*background-color: pink;*/
     width: 100%;
 }
@@ -268,7 +269,7 @@ body, nav, post-sidebar {
     /*gap: 50px;*/
     justify-content: space-between;
     align-items: baseline;
-  /*border-bottom: 1px solid var(--border-color);*/
+  /*border-bottom: var(--border-width) solid var(--border-color);*/
   /*background-color: blue;*/
 }
 
