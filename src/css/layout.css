@@ -73,7 +73,7 @@ html {
 .post-layout {
   display: grid;
   grid-template-columns: 300px 1fr;
-  gap: 70px;
+  gap: 40px;
   width: 85%;
   align-items: start;
 }
@@ -148,7 +148,7 @@ blockquote > :first-child {
 @media (max-width: 846px) {
   .post-layout {
     grid-template-columns: 1fr;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .post-sidebar {
