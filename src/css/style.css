@@ -309,11 +309,6 @@ pre code {
     padding: 8px 0;
 }
 
-.katex-html {
-  -webkit-text-stroke: 0.25px;
-
-}
-
 .katex .mord,
 .katex .mbin,
 .katex .mrel,
