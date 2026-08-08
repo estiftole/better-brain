@@ -150,7 +150,6 @@ blockquote > :first-child {
   .post-layout {
     grid-template-columns: 1fr;
     gap: 0px;
-    background-color: pink;
   }
 
   .post-sidebar {
