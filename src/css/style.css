@@ -178,6 +178,12 @@ body, nav, post-sidebar {
   color: #F4F4F4;
   background-color: blue;
 }
+
+button {
+    all: unset;
+    cursor: pointer; /* Ensure the pointer still shows up */
+}
+
 .reference {
   text-decoration: underline var(--muted-text) 2px;
 }
@@ -393,7 +399,7 @@ h1 {
 
     .links {
       display: flex;
-      justify-content: end;
+      justify-content: start;
     }
 
     .posts-section, .subheader-big, .links, .hero, .subheader {
