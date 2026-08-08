@@ -10,14 +10,6 @@ a {
   font-size: 25px;
 }
 
-
-.links {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
 .post-header {
   padding-bottom: 5px;
 }
