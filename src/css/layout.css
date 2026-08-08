@@ -12,7 +12,7 @@ th, td {
 
 th {
   background-color: #f8f9fa;
-  /*font-weight: 600;*/
+
 }
 
 .mainpost-header {
@@ -23,10 +23,8 @@ th {
     padding-bottom: 40px;
     text-transform: uppercase;
     width: 85%;
-    /*font-weight: 400;*/
+
 }
-
-
 
 .mainpost-header > h1 {
     font-weight: 400;
@@ -37,15 +35,9 @@ th {
     gap: 60px;
 }
 
-/*DOOKIE*/
-
-/* Layout container */
-
-
-/* Sticky TOC Sidebar */
 .toc-sidebar {
   position: sticky;
-  top: 40px; /* Offset from top of viewport when scrolling */
+  top: 40px;
   max-height: calc(100vh - 80px);
   overflow-y: auto;
 }
@@ -53,8 +45,6 @@ th {
 .toc h4 {
   margin-top: 0;
   text-transform: uppercase;
-  /*font-size: 0.85rem;*/
-  /*color: #888;*/
 }
 
 .toc ul {
@@ -69,80 +59,55 @@ th {
 
 .toc a {
   text-decoration: none;
-  /*color: #444;*/
-  /*font-size: 0.9rem;*/
-  /*transition: color 0.2s ease;*/
 }
 
 .toc a:hover {
-  /*color: var(--accent-hover);*/
   color: white;
   background-color: blue;
 }
 
-/* Enable smooth scrolling across the page */
-/* Enable native smooth scrolling down to the anchor */
 html {
   scroll-behavior: smooth;
 }
 
-/* The 2-column grid */
 .post-layout {
   display: grid;
   grid-template-columns: 300px 1fr;
   gap: 70px;
-  /*margin-top: 50px;*/
   width: 85%;
-
   align-items: start;
 }
 
-
-
-
-
 .post-sidebar {
-  /* Sticks to the screen 30px from the top */
   position: sticky;
   top: 40px;
   text-transform: uppercase;
   font-weight: 400;
-  /*width: 25vw;*/
 }
 
-/* Styling the menu itself */
 .toc {
   counter-reset: toc-count;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 100%; /* Spans full width of sidebar to create the gap */
+  width: 100%;
 }
 
 .toc-link {
   display: flex;
-  justify-content: space-between; /* Number left, title right */
-  /*align-items: baseline;*/
-  align-items: flex-start; /* Pins (07 /) to the top line of multi-line titles */
-  text-align: right;               /* Right-aligns multi-line titles */
-  text-transform: uppercase;        /* Matches the ALL CAPS styling */
-  /*color: #333;*/
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: right;
+  text-transform: uppercase;
   text-decoration: none;
   padding-right: 20px;
 }
 
-/* Format the numbers on the left as (01), (02), etc. */
 .toc-link::before {
   counter-increment: toc-count;
   content: counter(toc-count, decimal-leading-zero) " /";
-  /*color: #666;*/
   white-space: nowrap;
-
-  /*padding-right: 20px; /* Minimum space between number and title */*/
 }
-
-/* Mobile: Stack the layout when the screen is small */
-
 
 .post-body {
   font-size: 18px;
@@ -150,19 +115,15 @@ html {
   padding-bottom: 100px;
 }
 
-/* 1. Give the Sticky TOC room below the top nav bar */
 .post-sidebar {
   position: sticky;
-  /* Navbar height (e.g. 70px) + 30px breathing room = 100px */
   top: 90px;
   align-self: start;
-  max-height: calc(100vh - 120px); /* Adjust max-height accordingly */
+  max-height: calc(100vh - 120px);
   overflow-y: auto;
 }
 
-/* 2. Stop clicked headings below the top nav bar */
 .post-body h2 {
-  /* Navbar height (e.g. 70px) + 20px breathing room = 90px */
   scroll-margin-top: 90px;
   font-weight: 400;
   font-size: 30px;
@@ -186,7 +147,7 @@ blockquote > :first-child {
 
 @media (max-width: 846px) {
   .post-layout {
-    grid-template-columns: 1fr; /* Switch to single column */
+    grid-template-columns: 1fr;
     margin-top: 30px;
   }
 

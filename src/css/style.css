@@ -22,8 +22,6 @@
 
   --max-width: 720px;
   --font-family: system-ui, -apple-system, sans-serif;
-  /*--font-family: "Elms Sans";*/
-  /*--font-family: "Barlow", sans-serif;*/
   --border-width: 2px;
 }
 
@@ -50,7 +48,6 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  /*font-weight: <weight>;*/
 }
 
 .open-sans {
@@ -62,16 +59,12 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  /*font-family: var(--font-family);*/
   font-size: 15px;
-  /*font-weight: 500;*/
   margin: 0;
   padding: 0;
 
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
-  /*align-items: center;*/
 }
 
 body, nav, post-sidebar {
@@ -90,11 +83,8 @@ body, nav, post-sidebar {
   padding: 5px 5px;
   display: flex;
   justify-content: center;
-  /*align-items: center;*/
   background-color: var(--bg-color);
   /*border-bottom: var(--border-width) solid var(--border-color);*/
-  /*background-color: white;*/
-
 }
 
 .links {
@@ -102,14 +92,9 @@ body, nav, post-sidebar {
   width: 85%;
   align-items: end;
   justify-content: space-between;
-    /*background-color: pink;*/
 }
 
 .container {
-  /*max-width: var(--max-width);*/
-  /*margin: 2rem auto;*/
-  /*padding: 0 1rem;*/
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,7 +105,6 @@ body, nav, post-sidebar {
     display: flex;
     justify-content: center;
     border-bottom: var(--border-width) solid var(--border-color);
-    /*background-color: pink;*/
     width: 100%;
 }
 
@@ -132,16 +116,13 @@ body, nav, post-sidebar {
   gap: 30px;
   padding-bottom: 40px;
   font-weight: 500;
-  /*background-color: pink;*/
 }
 
 
 .header {
     text-align: left;
     text-transform: uppercase;
-  /*font-size: 30px;*/
   font-weight: 400;
-  /*background-color: blue;*/
   width: 70%;
 }
 
@@ -150,10 +131,8 @@ body, nav, post-sidebar {
     width: fit-content;
   display: flex;
   flex-direction: column;
-  /*text-align: right;*/
   align-items: end;
   justify-content: space-between;
-  /*background-color: pink;*/
 }
 
 .subheader {
@@ -161,8 +140,7 @@ body, nav, post-sidebar {
     padding-top: 60px;
     font-weight: 500;
     width: 85%;
-    /*font-style: italic;*/
-    /*display: none;*/
+    text-transform: uppercase;
 }
 
 .mini-text {
@@ -183,11 +161,6 @@ body, nav, post-sidebar {
   border-radius: 8px;
 }
 
-
-
-
-
-
 .btn {
     font-size: 15px;
     font-weight: 500;
@@ -201,7 +174,6 @@ body, nav, post-sidebar {
 }
 
 .btn:hover {
-  /*color: var(--accent-hover);*/
   white-space: nowrap;
   color: #F4F4F4;
   background-color: blue;
@@ -224,8 +196,6 @@ body, nav, post-sidebar {
   width: 85%;
 }
 
-
-
 .post-grid {
     display: flex;
     flex-direction: column;
@@ -233,20 +203,15 @@ body, nav, post-sidebar {
     align-items: center;
     gap: 50px;
 }
+
 .post-card {
   display: grid;
   width: 100%;
-
   grid-template-columns: 300px max-content 1fr;
   justify-content: space-between;
-
   gap: 40px;
   align-items: start;
-
 }
-
-
-
 
 .post-info {
   display: flex;
@@ -269,11 +234,8 @@ body, nav, post-sidebar {
   padding: 10px 0px;
   margin-bottom: 20px;
     display: flex;
-    /*gap: 50px;*/
     justify-content: space-between;
     align-items: baseline;
-  /*border-bottom: var(--border-width) solid var(--border-color);*/
-  /*background-color: blue;*/
 }
 
 
@@ -282,13 +244,8 @@ body, nav, post-sidebar {
     flex-direction: column;
     justify-content: space-between;
     text-transform: uppercase;
-  /*color: var(--muted-text);*/
   font-weight: 400;
   white-space: nowrap;
-  /*width: fit-content;*/
-  /*width: 150px;*/
-  /*background-color: blue;*/
-  /*padding-bottom: 15px;*/
 }
 
 .post-desc {
@@ -301,7 +258,6 @@ body, nav, post-sidebar {
 }
 
 .post {
-  /*width: 85%;*/
   padding: 40px 0px;
   display: flex;
   justify-content: center;
@@ -389,18 +345,14 @@ img {
 }
 
 h1 {
-    /*font-size: 25px;*/
     font-size: 35px;
 }
 
 .subheader-big {
     font-weight: 500;
-    width: 85%
-    /*padding-bottom: 20px;*/
-    /*background-color: blue;*/
+    width: 85%;
+    text-transform: uppercase;
 }
-
-
 
 @media (max-width: 846px) {
 
@@ -447,16 +399,12 @@ h1 {
     .links {
       display: flex;
       justify-content: end;
-      /*align-items: end;*/
-      /*justify-content: space-between;*/
-        /*background-color: pink;*/
     }
 
     .posts-section, .subheader-big, .links, .hero, .subheader {
         width: 90%;
     }
 }
-
 
 .katex-display,
 .post-body {

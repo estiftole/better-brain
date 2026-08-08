@@ -3,7 +3,7 @@ layout: post.njk
 title: "Contribution Guidelines"
 date: 2026-07-26
 author: E Tolemariam
-description: "How to add new posts."
+description: "Writing posts is a great way to share your ideas, get feedback, and expand your horizons."
 ---
 
 ## Why Contribute
