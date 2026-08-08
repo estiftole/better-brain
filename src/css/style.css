@@ -400,6 +400,7 @@ h1 {
     .links {
       display: flex;
       justify-content: start;
+      text-wrap: nowrap;
     }
 
     .posts-section, .subheader-big, .links, .hero, .subheader {
